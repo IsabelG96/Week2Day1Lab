@@ -92,6 +92,17 @@ public class Runner {
 //
 //          So [2, 7, 13, 2] would have sum of 9.
 
+        int total2 = 0;
+
+        for (int i = 0; i < numbers.size(); i++) {
+            if (numbers.get(i) == 13 || numbers.indexOf(13)+1  == i){
+                continue;
+            }
+            total2 = numbers.get(i) + total2;
+        }
+        System.out.println(total2);
+
+
     }
 
 }
